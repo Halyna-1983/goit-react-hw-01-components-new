@@ -10,27 +10,26 @@ export const Profile = ({ username, tag, location, avatar, stats: {followers, vi
         <Avatar
             src={avatar}
             alt="User avatar"
-            className="avatar"
         />
             
-            <UserName className="name">{ username }</UserName>
-            <Tag className="tag">@{ tag }</Tag>
-            <Tag className="location">{ location }</Tag> 
+            <UserName>{ username }</UserName>
+            <Tag>@{ tag }</Tag>
+            <Tag>{ location }</Tag> 
         
         <Stats>
                     
             <StatsUl>
                 <StatsItem>
-                    <span className="label">Followers</span>
-                    <Quantity className="quantity">{ followers }</Quantity>
+                    <span>Followers</span>
+                    <Quantity>{ followers }</Quantity>
                 </StatsItem>
                 <StatsItem>
-                    <span className="label">Views</span>
-                    <Quantity className="quantity">{views}</Quantity>
+                    <span>Views</span>
+                    <Quantity>{views}</Quantity>
                 </StatsItem>
                 <StatsItem>
-                    <span className="label">Likes</span>
-                    <Quantity className="quantity">{likes}</Quantity>
+                    <span>Likes</span>
+                    <Quantity>{likes}</Quantity>
                 </StatsItem>
             </StatsUl>
         </Stats>
