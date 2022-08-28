@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
     return (
         <>
             <span style={{ backgroundColor: isOnline === true ? 'green' : 'red' }} />
-            <img className="avatar" src={avatar} alt="" width="48" />
+            <img className="avatar" src={avatar} alt="User avatar" width="48" />
             <p className="name">{name}</p>
         </>
     );
