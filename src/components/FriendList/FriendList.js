@@ -20,7 +20,9 @@ export const FriendList = ({ friends }) => {
 };
 
 FriendList.propTypes = {
-    isOnline: PropTypes.string,
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-}
+    friendlist: PropTypes.shape({
+        isOnline: PropTypes.string,
+        avatar: PropTypes.object.isRequired,
+        name: PropTypes.string.isRequired,
+    }),
+};

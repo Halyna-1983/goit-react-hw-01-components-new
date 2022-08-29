@@ -30,8 +30,8 @@ export const App = () => {
       <Title> 3 - Список друзів </Title>
       <FriendList friends={friends} />;
 
-      {/* <Title> 4 - Історія транзакцій </Title>
-      <TransactionHistory items={transactions} />; */}
+      <Title> 4 - Історія транзакцій </Title>
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
