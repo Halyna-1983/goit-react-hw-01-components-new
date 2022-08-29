@@ -1,33 +1,34 @@
 import PropTypes from 'prop-types';
 import Transaction from './Transaction';
+import { ProfileCard, Structure, Table } from './Transactiorn.styled.js';
 
 export const TransactionHistory = ({ items }) => {
     
     return (
-        <table className="transaction-history">
+        <ProfileCard>
             <thead>
                 <tr>
-                    <th>Type</th>
-                    <th>Amount</th>
-                    <th>Currency</th>
+                    <Structure>Type</Structure>
+                    <Structure>Amount</Structure>
+                    <Structure>Currency</Structure>
                 </tr>
             </thead>
 
             <tbody>
                 {items.map(item => {
                     const { type, amount, currency, id } = item
-                    return <tr key={id} >
+                    return <Table key={id} >
                         <Transaction
                             type={type}
                             amount={amount}
                             currency={currency}
                             id={id}
                         />
-                    </tr>
+                    </Table>
                 })}
       
             </tbody>
-        </table>
+        </ProfileCard>
     )
 };
 

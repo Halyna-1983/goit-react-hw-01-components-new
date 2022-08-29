@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
-// import {  } from './FriendListItem.styled';
+import { ProfileCard, Name } from './FriendListItem.styled';
 
  const FriendListItem = friends => {
     const { avatar, name, isOnline } = friends
     return (
-        <>
+        <ProfileCard>
             <span style={{ backgroundColor: isOnline === true ? 'green' : 'red' }} />
             <img className="avatar" src={avatar} alt="User avatar" width="48" />
-            <p className="name">{name}</p>
-        </>
+            <Name className="name">{name}</Name>
+        </ProfileCard>
     );
 };
 

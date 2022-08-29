@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'; 
-// import {  } from './Statistics.styled';
 
 const Transaction = ({type, amount, currency}) => (
     <>
